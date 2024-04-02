@@ -14,7 +14,8 @@ app.use(cors()); // Use cors middleware with options
 app.use(express.json());
 
 app.get('/connect', async(req, res) => {
-  res.json({data: 'Connected Successfully'})
+  console.log('Connection established');
+  res.json({data: 'Connected Successfully'});
 });
 
 app.post('/graphql', async (req, res) => {
