@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.get('/connect', async(req, res) => {
   res.json({data: 'Connected Successfully'})
-}
+};
 
 app.post('/graphql', async (req, res) => {
   const body = req.body;
