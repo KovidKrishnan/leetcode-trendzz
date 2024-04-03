@@ -5,11 +5,7 @@ import fetch from 'node-fetch';
 const app = express();
 const PORT = 3000;
 
-const corsOptions = {
-  origin: 'https://leetcode-trendzz.vercel.app/'
-}
-
-app.use(cors(corsOptions)); // Use cors middleware with options
+app.use(cors()); // Use cors middleware with options
 
 app.use(express.json());
 
