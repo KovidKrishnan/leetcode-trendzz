@@ -6,10 +6,10 @@ const app = express();
 const PORT = 3000;
 
 const corsOptions = {
-  origin: ['127.0.0.1:5173', '192.168.29.83:5173']
+  origin: 'https://leetcode-trendzz.vercel.app/'
 }
 
-app.use(cors()); // Use cors middleware with options
+app.use(cors(corsOptions)); // Use cors middleware with options
 
 app.use(express.json());
 
